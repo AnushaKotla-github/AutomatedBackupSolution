@@ -1,12 +1,12 @@
 # Configuration
-$sourceDir = "C:\Users\91990\Automatedbackupsolution"  # Change this to your source directory
-$remoteUser = "91990"                                  # Remote server username (not used in this script)
-$remoteHost = "192.168.1.4"                            # Remote server IP or hostname
-$remoteDir = "C$\Backups"                              # Change this to your remote directory, use C$ for administrative shares
+$sourceDir = "C:\Path\To\Your\SourceDirectory"  # Change this to your source directory
+$remoteUser = "REMOTE_USER"                      # Remote server username (not used in this script)
+$remoteHost = "REMOTE_HOST"                      # Remote server IP or hostname
+$remoteDir = "C$\Path\To\Remote\Directory"      # Change this to your remote directory, use C$ for administrative shares
 
 # Create a timestamp for logging
 $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
-$logFile = "C:\Users\91990\Automatedbackupsolution\backup_$timestamp.log"
+$logFile = "C:\Path\To\Your\LogDirectory\backup_$timestamp.log"  # Change this to your log directory
 
 # Perform the backup using robocopy
 Write-Host "Starting backup of $sourceDir to \\$remoteHost\$remoteDir" | Tee-Object -FilePath $logFile
