@@ -1,4 +1,4 @@
-# Configuration
+## Configuration
 $sourceDir = "C:\Path\To\Your\SourceDirectory"  # Change this to your source directory
 $remoteUser = "REMOTE_USER"                      # Remote server username (not used in this script)
 $remoteHost = "REMOTE_HOST"                      # Remote server IP or hostname
